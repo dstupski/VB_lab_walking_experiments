@@ -1,0 +1,23 @@
+<launch>
+
+# set up src and data directories and define prefix name
+<rosparam command="load" file="/home/drainfly/demo/demo_test/src/home_directory.yaml"/>
+<node name="set_exp_basename_1" pkg="multi_tracker" type="set_basename_and_path.py" output="screen" args="--nodenum=1" />
+
+# load parameters for the tracking, and the data association
+<rosparam command="load" file="/home/drainfly/demo/demo_test/src/tracker_parameters.yaml"/>
+<rosparam command="load" file="/home/drainfly/demo/demo_test/src/data_association_parameters.yaml"/>
+
+# launch tracking and data association nodes
+<node name="tracker_1" pkg="multi_tracker" type="tracker_simplebuffer.py" output="screen" args="--nodenum=1" />
+<node name="data_association_1" pkg="multi_tracker" type="data_association.py" output="screen" args="--nodenum=1" />
+
+# launch node to save data to hdf5
+<node name="save_hdf5_data_1" pkg="multi_tracker" type="save_data_to_hdf5.py" output="screen" args="--nodenum=1" />
+
+# load parameters for, and show live tracking
+<rosparam command="load" file="/home/drainfly/demo/demo_test/src/liveviewer_parameters.yaml"/>
+<node name="liveview_1" pkg="multi_tracker" type="liveviewer.py" output="screen" args="--nodenum=1" />
+
+
+</launch>

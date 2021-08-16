@@ -1,0 +1,5 @@
+frame_rate: 40
+image_encoding: "mono8"
+exposure: 4000
+#big platform: 2300 # microseconds   medium platform: 3200      small platform: 4000
+gain: 0

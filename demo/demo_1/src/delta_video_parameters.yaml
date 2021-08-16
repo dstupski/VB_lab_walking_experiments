@@ -1,0 +1,8 @@
+/multi_tracker/1/delta_video/image_topic: '/pylon_camera_node/image_raw'
+/multi_tracker/1/delta_video/threshold: 80
+/multi_tracker/1/delta_video/camera_encoding: 'mono8'
+/multi_tracker/1/delta_video/max_change_in_frame: 0.2
+/multi_tracker/1/delta_video/roi_l: 0
+/multi_tracker/1/delta_video/roi_r: 500
+/multi_tracker/1/delta_video/roi_b: 200
+/multi_tracker/1/delta_video/roi_t: -1
