@@ -18,8 +18,8 @@ H   = np.matrix([                    [1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
                                      [0, 0, 0, 0, 0, 0, 1, 0, 0, 0],
                                      [0, 0, 0, 0, 0, 0, 0, 0, 1, 0]])
 P0  = 10*np.eye(10)
-Q   = 25*np.matrix(np.eye(10))
-R   = 50*np.matrix(np.eye(5))
+Q   = 15*np.matrix(np.eye(10))
+R   = 30*np.matrix(np.eye(5))
 
 gamma  = None
 gammaW = None

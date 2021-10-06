@@ -1,5 +1,5 @@
 /multi_tracker/1/tracker/image_topic: '/pylon_camera_node/image_raw'
-/multi_tracker/1/tracker/threshold: 60
+/multi_tracker/1/tracker/threshold: 20
 /multi_tracker/1/tracker/backgroundupdate: 0
 /multi_tracker/1/tracker/medianbgupdateinterval: 0
 /multi_tracker/1/tracker/camera_encoding: 'mono8'
@@ -14,10 +14,10 @@
 /multi_tracker/1/tracker/min_size: 5
 /multi_tracker/1/tracker/max_size: 30000
 /multi_tracker/1/tracker/max_expected_area: 10000
-/multi_tracker/1/tracker/roi_l: 0
-/multi_tracker/1/tracker/roi_r: 500
-/multi_tracker/1/tracker/roi_b: 300
-/multi_tracker/1/tracker/roi_t: -1
+/multi_tracker/1/tracker/roi_l: 505
+/multi_tracker/1/tracker/roi_r: 593
+/multi_tracker/1/tracker/roi_b: 93
+/multi_tracker/1/tracker/roi_t: 414
 /multi_tracker/1/tracker/circular_mask_x: 'none' 
 /multi_tracker/1/tracker/circular_mask_y: 'none'
 /multi_tracker/1/tracker/circular_mask_r: 'none'
