@@ -1,0 +1,9 @@
+min_y: 60
+max_y: 120
+trigger_dur: 1
+refrac: 600
+arena_id: '3'
+pub_node: '/arena_3_trigger_info' 
+sub_node: '/multi_tracker/3/tracked_objects'
+baud: 9600
+port: '/dev/ttyACM0'
